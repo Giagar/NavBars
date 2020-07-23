@@ -1,0 +1,69 @@
+$rootFontSize: 19px;
+
+:root {
+    font-size: $rootFontSize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#vw {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: lightgrey;
+}
+
+main {
+    width: 60%;
+    margin: auto;
+    padding: 0 10%;
+    transition: width 0.25s;
+    .sectionTitle {
+        margin-bottom: 50px;
+    }
+    .sectionContent {
+        border: 1px dotted lightgrey;
+        height: 500px;
+        position: relative;
+    }
+}
+
+
+
+#content1 {
+    height: 1000px;
+    ul {
+        list-style-type: none;
+        border: 1px solid blue; 
+        width: 150px;
+        padding: 1rem 0.8rem;
+        position: sticky;
+        top: 0;
+        transform: translateY(100px);
+        li{
+            padding: 0.4rem 0;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1600px) {
+    main {
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100% !important ;
+    }
+}
